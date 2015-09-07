@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LabIntents</string>
+
+    <string name="edit_label">Edit</string>
+    <string name="share_label">Share</string>
+    <string name="submit_label">Submit</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="default_message">This is the default message. Click EDIT now to change the message.</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_edit_note">Edit note</string>
+</resources>
