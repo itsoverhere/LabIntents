@@ -1,6 +1,7 @@
 package edu.mobidev.labintents;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -44,9 +45,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent i = new Intent();
-            i.setAction(Intent.ACTION_SEND);
+            i.setAction(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("smsto:1234567890"));
             String note = tvNote.getText().toString();
-            i.putExtra(Intent.EXTRA_TEXT, note);
+            i.putExtra("sms_body", note);
             startActivity(Intent.createChooser(i, "Where do you want to share this text?"));
         }
     };
