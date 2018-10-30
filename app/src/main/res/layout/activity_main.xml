@@ -11,17 +11,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/edit_label"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:background="#ff594d"
-        android:textColor="#ffffff"
-        android:textAllCaps="true"
-        android:textSize="20sp"
         android:id="@+id/button_edit"
-        android:layout_alignParentRight="true"/>
+        style="@style/ButtonEditStyle"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
